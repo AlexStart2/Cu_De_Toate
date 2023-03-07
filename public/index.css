@@ -9,23 +9,32 @@ select{
   border-radius: 5px;
   border-color: #81b8f8;
   padding: 5px;
-  color: #333;
   position: absolute;
   top:80px;
   right: 125px;
 }
 
-.form-box{
+.login-section{
+  border: 2px solid #81b8f8;
+  height:550px;
+  width: 400px;
+  padding: 5px;
   position: absolute;
   right: 200px;
   top: 75px;
+  transform: translate();
+  transition: .3s;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.login-section .formbox{
+  position: absolute;
   display: flex;
   justify-content:center;
   align-items: center;
   height:550px;
   width: 400px;
-  align-items: center;
-  border: 2px solid #81b8f8;
 }
 
 h2{
@@ -133,8 +142,27 @@ img{
 }
 a{
   color: #81b8f8;
-}
-.move{
   position: relative;
-  left: 30px;
+  right: -15px;
 }
+
+
+.login-section .formbox.login{
+  transform: translateY(-550px);
+  transition: .6s ease;
+}
+.login-section.active .formbox.login{
+  transform: translateY(0);
+  transition-delay: .3s;
+}
+
+.login-section .formbox.register{
+
+  transform: translateY(-10px);
+  transition: transform .6s;
+}
+.login-section.active .formbox.register{
+  transform: translateY(550px);
+  transition-delay: 0s;
+}
+

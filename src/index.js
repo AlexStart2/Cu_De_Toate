@@ -1,14 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+const loginr= document.querySelector('.login-section')
+const Loginlink= document.querySelector('.login-link')
+const registerlink= document.querySelector('.register-link')
+Loginlink.addEventListener('click',()=>{
+  loginr.classList.add('active')
+})
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
-const togglePassword = document.querySelector('#toggle-password');
-const passwordInput = document.querySelector('#password');
-
-togglePassword.addEventListener('click', function() {
-  const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
-  passwordInput.setAttribute('type', type);
-  this.textContent = type === 'password' ? 'Show' : 'Hide';
-});
+registerlink.addEventListener('click',()=>{
+  loginr.classList.remove('active')
+})
