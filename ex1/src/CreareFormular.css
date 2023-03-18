@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding-top: 10px;
+    padding-left: 55px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    height: 60px;
+    color: #fff;
+    font-size: 40px;
+    background-color: #005479;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    color: #fff;
+    padding: 10px, 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    padding-right: 10px;
+}
+ul{
+    position: relative;
+    right:25px;
+}
+li:hover{
+    color:#56CCF2;
+}
+
+.find{
+    position: relative;
+    top:-8px;
+    height: 30px;
+    object-fit: cover;
+    transition: .3s;
+}
+.find:hover{
+    transform: translateX(-30px);
+    transition: .3s;
+}
+.src{
+    position: relative;
+    left: -30px;
+    color: #005479;
+    top: 2px;
+    overflow: hidden;
+}
+.logotip{
+    position: absolute;
+    left: 120px;
+    top: 15px;
+    height: 30px;
+    width: auto;
+}
+
+
+
+.menu:hover{
+    color: #56CCF2;
+}
+
+.formulare{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 290px;
+    background-color: #E2F5F8;
+    position: absolute;
+    top:280px;
+    overflow: hidden;
+}
+
+.footer{
+    position:fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content:space-between;
+    padding-top: 10px;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-bottom: 10px;
+    height: 60px;
+    color: #fff;
+    font-size: 20px;
+    background-color: #005479;
+}
+.footer a:hover{
+    color: #56CCF2;
+}
+.footer a .icons{
+    position: relative;
+    top:4px;
+}
+.footer a{
+    margin: 10px;
+}
+
+.New-form{
+    position: absolute;
+    left: 200px;
+    top: 90px;
+}
+
+.Preview{
+    position: absolute;
+    left: 360px;
+    top: 90px;
+}
+
+.Create_form{
+    display:flex;
+    width: 1100px;
+    height: 1000px;
+    position: absolute;
+    left: 200px;
+    top: 160px;
+    border:1px solid #000000 ;
+    padding: 20px;
+}
+.first-bar{
+    position: absolute;
+    left: 200px;
+    top: 131px;
+    display:flex;
+    width: 1100px;
+    height: 30px;
+    border: 1px solid #000000;
+    padding: 5px;
+    background-color: #E2F5F8;
+}
+
+.form{
+    font-size: 16px;
+}
+.Create_form .Dinamic-fields b{
+    position: relative;
+    left: 80px;
+    top: 5px;
+}
+.Create_form .Title{
+    position: relative;
+    left: 30px;
+}
+
+.Create_form .Dinamic-fields{
+    display: block;
+    position:relative;
+    top: 15px;
+    left: 30px;
+    justify-content: center;
+    width: 267px;
+    height: 420px;
+    border: 1px solid #000000;
+    background-color: #E2F5F8;
+    overflow: hidden;
+    overflow-y: scroll;
+}::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #E2F5F8;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color:#6cd1e1;
+    border-radius: 5px;
+  }
+
+.Create_form .Dinamic-fields .D_field{
+    width: 250px;
+    height: 30px;
+    background-color: #fff;
+    margin: 8.5px;
+    font-family: 'Inter';
+}
+
+.Create_form .Dinamic-fields .D_field {
+    position: relative;
+    top: 5px;
+}
+
+.Create_form .Add-field{
+    display:inline;
+    position: relative;
+    top: 40px;
+    left: 30px;
+    background-color: #E2F5F8;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.Create_form .Delete{
+    position: relative;
+    left: 125px;
+}
+
+.Create_form .Section{
+    display: block;
+    position:relative;
+    top: 130px;
+    left: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 267px;
+    height: 110px;
+    border: 1px solid #000000;
+    background-color: #E2F5F8;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.Create_form .Section .D_Section{
+    width: 250px;
+    height: 30px;
+    background-color: #fff;
+    margin: 8.5px;
+    font-family: 'Inter';
+    position: relative;
+    top: 5px;
+}
+.Create_form .Section b{
+    position: relative;
+    left: 100px;
+    top: 5px;
+}
+.Create_form .Add-Section{
+    display:inline;
+    position: relative;
+    top: 160px;
+    left: 30px;
+    background-color: #E2F5F8;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.Create_form .DRP{
+    position: relative;
+    top: 240px;
+    left: -47px;
+}
+
+.Create_form .days{
+    width: 35px;
+}
+.Create_form .submit{
+    display: block;
+    position: relative;
+    width: 200px;
+    bottom: -270px;
+    left: 30px;
+    background-color: #E2F5F8;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.Create_form .Label{
+    position: absolute;
+    left: 500px;
+    top: 60px;
+}
+.Create_form .Label .LabelInput{
+    width: 200px;
+    position: relative;
+    right: -120px;
+}
+
+.Create_form .keyword{
+    position: absolute;
+    left: 500px;
+    top: 130px;
+}
+.Create_form .Place-keyword{
+    width: 200px;
+    position: relative;
+    right: -23px;
+}
+
+.Create_form .Mandatary{
+    position: absolute;
+    left: 500px;
+    top: 190px;
+}
+.Create_form .Mandatary .check{
+    position: relative;
+    right: -80px;
+    padding: 10px;
+}
+.Create_form .F_type{
+    position: absolute;
+    left: 500px;
+    top: 250px;
+}
+.Create_form .F_type .Type{
+    position: relative;
+    right: -84px;
+    width: 200px;
+}
+
+
+.Create_form .Options{
+    display: block;
+    position:absolute;
+    top: 340px;
+    left: 665px;
+    justify-content: center;
+    align-items: center;
+    width: 267px;
+    height: 180px;
+    border: 1px solid #000000;
+    background-color: #E2F5F8;
+    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+.Create_form .Options .D_Options{
+    width: 250px;
+    height: 30px;
+    background-color: #fff;
+    margin: 8.5px;
+    font-family: 'Inter';
+    position: relative;
+    top: 5px;
+}
+.Create_form .Options b{
+    position: relative;
+    left: 100px;
+    top: 5px;
+}
+
+
+
+.Create_form .Add-Option{
+    display:inline;
+    position: absolute;
+    top: 340px;
+    left: 965px;
+    background-color: #E2F5F8;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.Create_form .TitleContent{
+    position: absolute;
+    top: 635px;
+    left: 500px;
+}
+.Create_form .Content{
+    position: absolute;
+    top: 635px;
+    left: 600px;
+    width: 400px;
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.Create_form .ScanDocument{
+    position: absolute;
+    left: 500px;
+    top: 860px;
+}
+
+.Create_form .Scan{
+    display:inline;
+    position: absolute;
+    left: 820px;
+    top: 918px;
+    width: 200px;
+    background-color: #E2F5F8;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+
+
+.Sfarsit{
+    position: relative;
+    top: 1200px;
+}
+
