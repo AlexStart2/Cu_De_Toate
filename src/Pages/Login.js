@@ -24,7 +24,7 @@ function Login(){
                   </div>
                   <button class="black-button">Log in</button>
                   <div class="register">
-                    <p>Don't have a account ?<a href="/Register" class="register-link">Sign Up</a></p>
+                    <p>Don't have a account ?<a href="/" class="register-link">Sign Up</a></p>
                   </div>
                 </form>
               </div>
