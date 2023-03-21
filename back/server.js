@@ -42,7 +42,7 @@ app.post('/api/submit', async (req, res) => {
   try {
     const existingString = await StringModel.findOne({ Email: inputEmail });
     if (existingString) {
-      return res.status(400).send('Email already exists');
+      return res.status(400).send(JSON.stringify('Email already exists'));
     }
 
     const newString = new StringModel({
@@ -61,6 +61,26 @@ app.post('/api/submit', async (req, res) => {
   }
 });
 
+
+
+app.post('/api/login', async (req, res) => {
+  const { inputEmail, inputPassword } = req.body;
+  console.log({ inputEmail, inputPassword });
+
+  try {
+    const existingString = await StringModel.findOne({ Email: inputEmail , Password: inputPassword});
+    if (existingString) {
+      console.log(JSON.stringify('User is found'));
+      return res.send(JSON.stringify('User is find'));
+    }else{
+      console.log(JSON.stringify('User is not found'));
+      return res.status(400).send(JSON.stringify('User is not find'));
+    }
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Error');
+  }
+});
 
   
 

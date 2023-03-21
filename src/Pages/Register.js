@@ -38,7 +38,7 @@ function Register(){
 console.log(data);
 if (data === 'Email already exists'){
 
-  alert("This email is already used!");
+  alert("This email is already used");
   
   return;
 }
